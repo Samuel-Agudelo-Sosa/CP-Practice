@@ -1,4 +1,5 @@
  #include <bits/stdc++.h>
+ 
  using namespace std;
  
  void solve() {
@@ -17,3 +18,6 @@
      }
      return 0;
  }
+
+ // para compilar en consola es g++ nombreArchivo.cpp -o nombreArchivo.exe
+ // para ejecutar pasandole un txt como input es: cmd /c "nombreArchivo.exe < input.txt"
