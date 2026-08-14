@@ -84,6 +84,17 @@ int main(){
     }
 
 
+    // en cuánto a código ASCCI lo podemos obtener igualando la variable a entero
+    string s = "hola";
+    for (char c : s) {
+        cout << "Caracter: " << c << ", ASCII: " << (int)c << "\n";
+    }
+    //o..
+    int ascci = s[0]; //el primer caracter de la cadena
+    cout << "Primer caracter: " << s[0] << ", ASCII: " << ascci << "\n";
+    //para convertir a minuscula se resta 32 al valor ASCCI del caracter, para convertir a mayuscula se suma 32 al valor ASCII del caracter
+    s[0] = (char)(ascci - 32); //convertimos a mayuscula el primer caracter
+    cout << "Primer caracter convertido a mayuscula: " << s << "\n";
 
     return 0;
 }
