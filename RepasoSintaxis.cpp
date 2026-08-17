@@ -90,10 +90,11 @@ int main(){
         cout << "Caracter: " << c << ", ASCII: " << (int)c << "\n";
     }
     //o..
-    int ascci = s[0]; //el primer caracter de la cadena
-    cout << "Primer caracter: " << s[0] << ", ASCII: " << ascci << "\n";
-    //para convertir a minuscula se resta 32 al valor ASCCI del caracter, para convertir a mayuscula se suma 32 al valor ASCII del caracter
-    s[0] = (char)(ascci - 32); //convertimos a mayuscula el primer caracter
+    int ascii = s[0]; //el primer caracter de la cadena
+    cout << "Primer caracter: " << s[0] << ", ASCII: " << ascii << "\n";
+    //las minúsculas van de 97 a 122, las mayúsculas van de 65 a 90, 
+    //para convertir de minúscula a mayúscula restamos 32, para convertir de mayúscula a minúscula sumamos 32
+    s[0] = (char)(ascii - 32); //convertimos a mayuscula el primer caracter
     cout << "Primer caracter convertido a mayuscula: " << s << "\n";
 
     return 0;
