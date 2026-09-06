@@ -97,5 +97,16 @@ int main(){
     s[0] = (char)(ascii - 32); //convertimos a mayuscula el primer caracter
     cout << "Primer caracter convertido a mayuscula: " << s << "\n";
 
+    //ordenar descendentemente usando sort y una función lambda
+    vector<int> numeros_desc = {5, 2, 9, 1, 5, 6};
+    sort(numeros_desc.begin(), numeros_desc.end(), [](int a, int b) {
+        return a > b; //orden descendente, va primero el mayor
+    });
+    cout << "Numeros ordenados descendentemente:\n";
+    for (auto n : numeros_desc) {
+        cout << n << " ";
+    }
+    cout << "\n";
+
     return 0;
 }
