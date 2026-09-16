@@ -1,0 +1,7 @@
+-Arboles rojinegros, árboles alv, heap
+- binary search, dos videos y curso codeforces
+-combinatoria, teoría de números libro mío
+-two pointers curso codeforces
+-sparse table curso codeforces, disjoint sets curso codeforces
+-segmen tree part 1 and 2 curso codeforces
+-sufix array curso codeforces
