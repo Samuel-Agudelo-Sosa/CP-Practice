@@ -3,19 +3,13 @@ using namespace std;
 
 void solve() {
     int n; cin >> n;
-    int dato = 1, contador = 0;
-    for(int i = 0; i < n; i++){
+    int minimo = 10;
+    int dato;
+    for(int i = 0 ; i < 3; i++) {
         cin >> dato;
-        if(dato == 1){
-            contador++; 
-        }
+        minimo = min(dato, minimo);
     }
-    if(contador >= n - contador){
-        cout << "Bessie" << "\n";
-    }
-    else{
-        cout << "Elsie" << "\n";
-    }
+    cout <<  n - minimo << "\n";
 }
 
 int main() {
